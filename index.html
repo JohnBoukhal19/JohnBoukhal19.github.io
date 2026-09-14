@@ -1,98 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sagittarius — Independent Game Studio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-            text-align: center;
-        }
-
-        header {
-            padding: 80px 20px;
-        }
-
-        h1 {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #bbb;
-            font-size: 20px;
-        }
-
-        section {
-            padding: 50px 20px;
-        }
-
-        .game {
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 25px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        footer {
-            padding: 30px;
-            color: #777;
-            font-size: 14px;
-        }
-    </style>
-</head>
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Sagittarius Games — independent game studio creating original mobile games.">
+<meta name="theme-color" content="#07070a"><title>Sagittarius Games — Independent Game Studio</title>
+<style>
+:root{--bg:#07070a;--bg2:#0d0d12;--card:rgba(255,255,255,.055);--line:rgba(255,255,255,.11);--text:#f7f7fa;--muted:#a5a5b0;--a:#ff3d68;--b:#7c5cff;--gold:#ffc52e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 5%,rgba(124,92,255,.18),transparent 28%),radial-gradient(circle at 85% 20%,rgba(255,61,104,.13),transparent 25%),linear-gradient(180deg,var(--bg),var(--bg2) 45%,var(--bg));color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(7,7,10,.72);border-bottom:1px solid rgba(255,255,255,.08)}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em}.brand-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--b),var(--a));box-shadow:0 8px 30px rgba(124,92,255,.28);font-size:16px}.nav-links{display:flex;gap:28px;color:#c9c9d2;font-size:14px}.nav-links a:hover{color:#fff}.nav-cta{padding:10px 17px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.05);font-size:13px;font-weight:700}.nav-cta:hover{background:#fff;color:#09090c}.hero{position:relative;padding:110px 0 90px;text-align:center}.hero-glow{position:absolute;left:50%;top:30px;transform:translateX(-50%);width:620px;height:300px;background:radial-gradient(circle,rgba(124,92,255,.25),transparent 68%);filter:blur(10px);pointer-events:none}.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:#c9c9d4;background:rgba(255,255,255,.035);font-size:12px;text-transform:uppercase;letter-spacing:.16em}.dot{width:7px;height:7px;border-radius:50%;background:#6dff9c;box-shadow:0 0 15px #6dff9c}h1{margin:26px 0 18px;font-size:clamp(58px,10vw,122px);line-height:.88;letter-spacing:-.07em;font-weight:900}.gradient-text{background:linear-gradient(100deg,#fff 15%,#c8c1ff 48%,#ff7895 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:clamp(16px,2vw,20px);line-height:1.7}.hero-actions{margin-top:34px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:12px;font-weight:800;font-size:14px;border:1px solid var(--line);transition:.25s}.btn-primary{background:linear-gradient(135deg,var(--b),var(--a));border:0;box-shadow:0 12px 35px rgba(255,61,104,.2)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 42px rgba(255,61,104,.3)}.btn-ghost:hover{background:#fff;color:#09090c}.featured{margin:25px auto 0;padding:1px;border-radius:28px;background:linear-gradient(135deg,rgba(124,92,255,.65),rgba(255,61,104,.45),rgba(255,255,255,.08))}.featured-inner{border-radius:27px;min-height:350px;display:grid;grid-template-columns:1.15fr .85fr;overflow:hidden;background:radial-gradient(circle at 75% 30%,rgba(255,197,46,.14),transparent 30%),linear-gradient(135deg,#11111a,#09090d)}.featured-copy{padding:55px;text-align:left}.eyebrow{color:#9d91ff;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}.featured h2{font-size:clamp(42px,6vw,72px);line-height:.95;margin:15px 0}.featured p{color:var(--muted);line-height:1.7;max-width:520px}.featured-art{position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,rgba(255,197,46,.2),transparent 35%),linear-gradient(145deg,#15151f,#09090d)}.orb{width:210px;height:210px;border-radius:50%;background:linear-gradient(145deg,#efff78,#d9ee45);box-shadow:0 0 90px rgba(255,230,70,.22),inset -20px -20px 45px rgba(0,0,0,.12);display:grid;place-items:center;position:relative;animation:float 4s ease-in-out infinite}.orb:before{content:"";width:95px;height:95px;border-radius:50%;background:#f6f6f3;border:8px solid #19191d;box-shadow:12px 16px 0 rgba(0,0,0,.12)}.orb:after{content:"";position:absolute;width:90px;height:11px;border-radius:20px;background:#202024;transform:rotate(-28deg);right:-28px;top:38px}@keyframes float{50%{transform:translateY(-12px) rotate(3deg)}}section{padding:90px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}.section-head h2{font-size:42px;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);margin:0;max-width:470px;line-height:1.6}.games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.game{min-height:285px;padding:24px;border-radius:22px;border:1px solid var(--line);background:var(--card);position:relative;overflow:hidden;transition:.3s}.game:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.075)}.game:before{content:"";position:absolute;width:170px;height:170px;right:-70px;top:-70px;background:radial-gradient(circle,rgba(124,92,255,.2),transparent 68%)}.game-icon{width:72px;height:72px;border-radius:20px;display:grid;place-items:center;font-size:25px;font-weight:900;background:linear-gradient(135deg,#222230,#101016);border:1px solid rgba(255,255,255,.13);box-shadow:inset 0 1px rgba(255,255,255,.08);margin-bottom:24px}.game:nth-child(2) .game-icon{background:linear-gradient(135deg,#32131c,#101016)}.game:nth-child(3) .game-icon{background:linear-gradient(135deg,#3a2a12,#101016)}.game:nth-child(4) .game-icon{background:linear-gradient(135deg,#171d35,#101016)}.game:nth-child(5) .game-icon{background:linear-gradient(135deg,#162c2b,#101016)}.game:nth-child(6) .game-icon{background:linear-gradient(135deg,#2c182f,#101016)}.game:nth-child(7) .game-icon{background:linear-gradient(135deg,#252c13,#101016)}.game h3{margin:0 0 9px;font-size:22px}.game p{margin:0;color:var(--muted);line-height:1.55;font-size:14px;min-height:67px}.game-link{display:inline-flex;margin-top:22px;color:#fff;font-size:13px;font-weight:800}.game-link span{margin-left:6px;transition:.2s}.game:hover .game-link span{transform:translateX(5px)}.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.035)}.stat{padding:34px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{display:block;font-size:42px;letter-spacing:-.04em}.stat span{color:var(--muted);font-size:13px}.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}.about h2{font-size:48px;line-height:1;margin:0 0 20px;letter-spacing:-.05em}.about p{color:var(--muted);line-height:1.8;font-size:16px}.about-box{padding:35px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,rgba(124,92,255,.08),rgba(255,61,104,.04))}.about-box h3{margin-top:0}.about-box ul{list-style:none;padding:0;margin:22px 0 0}.about-box li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#c9c9d2}.about-box li:last-child{border-bottom:0}footer{border-top:1px solid var(--line);padding:35px 0;color:#777783}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-links{display:flex;gap:22px;font-size:13px}.footer-links a:hover{color:#fff}@media(max-width:850px){.nav-links{display:none}.featured-inner{grid-template-columns:1fr}.featured-art{min-height:260px}.featured-copy{padding:38px}.games{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}}@media(max-width:560px){.hero{padding-top:75px}.games{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section-head{display:block}.section-head p{margin-top:12px}.footer-inner{display:block}.footer-links{margin-top:15px}}
+</style></head>
 <body>
-
-    <header>
-        <h1>Sagittarius</h1>
-        <p>Independent Game Studio</p>
-    </header>
-
-    <section>
-        <div class="game">
-            <h2>Grappie</h2>
-
-            <p>
-                Swing, grapple and climb as high as you can.
-                Master your movement, collect coins and beat your high score.
-            </p>
-
-            <a class="button"
-               href="https://play.google.com/"
-               target="_blank">
-                Google Play
-            </a>
-        </div>
-    </section>
-
-    <section>
-        <h2>About Sagittarius</h2>
-
-        <p>
-            Sagittarius is an independent game studio creating
-            original games for mobile players.
-        </p>
-    </section>
-
-    <footer>
-        © 2026 Sagittarius. All rights reserved.
-    </footer>
-
-</body>
-</html>
+<nav><div class="container nav-inner"><a class="brand" href="#"><span class="brand-mark">S</span>SAGITTARIUS</a><div class="nav-links"><a href="#games">Games</a><a href="#studio">Studio</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#games">Explore Games</a></div></nav>
+<header class="hero"><div class="hero-glow"></div><div class="container"><div class="kicker"><span class="dot"></span> Independent Game Studio</div><h1><span class="gradient-text">Sagittarius</span><br>Games</h1><p>We build original games with a focus on satisfying gameplay, distinctive worlds and experiences that are easy to pick up and hard to put down.</p><div class="hero-actions"><a class="btn btn-primary" href="#games">Explore our games</a><a class="btn btn-ghost" href="#studio">Meet the studio</a></div></div></header>
+<main>
+<section style="padding-top:10px"><div class="container"><div class="featured"><div class="featured-inner"><div class="featured-copy"><div class="eyebrow">Featured game</div><h2>Grappie</h2><p>Grapple, swing and climb as high as you can. Aim with touch, fire your hook and master your momentum while collecting coins and chasing a new high score.</p><a class="btn btn-primary" href="https://play.google.com/store/apps" target="_blank" rel="noopener">View on Google Play</a></div><div class="featured-art"><div class="orb"></div></div></div></div></div></section>
+<section id="games"><div class="container"><div class="section-head"><div><div class="eyebrow">The portfolio</div><h2>Our Games</h2></div><p>Seven different ideas, seven different ways to play.</p></div><div class="games">
+<article class="game"><div class="game-icon">FS²</div><h3>Floofy Shmoffy 2</h3><p>Fast-paced pixel platforming with handcrafted levels, abilities, characters, projectiles and boss battles.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.Sagittarius.FloofyShmoffy2" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">V</div><h3>Venomous</h3><p>2D action-adventure combining web-slinging, sword combat, shurikens, enemies and challenging bosses.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.Sagittarius.Venomous" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">W</div><h3>Wardo</h3><p>A precision 2D challenge built around rotation, timing, filling gaps and pushing your score higher.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.sagittarius.Wardo" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">FS</div><h3>Floofy Shmoffy</h3><p>A charming 2D reflex adventure where touch controls, obstacles and changing player shapes keep every level challenging.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.sagittarius.Floofyshmoffy" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">C</div><h3>Cubastik</h3><p>Guide a cube explorer through increasingly difficult levels while dodging obstacles across the cosmos.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.sagittarius.cubastik" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">I</div><h3>IMPERIUM</h3><p>Action-packed 2D platforming with enemies, mini-bosses, weapons, power-ups and a final showdown.</p><a class="game-link" href="https://play.google.com/store/apps/details?id=com.sagittarius.imperium" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+<article class="game"><div class="game-icon">G</div><h3>Grappie</h3><p>Grapple your way upward, collect coins and compete against your highest climb in an endless arcade challenge.</p><a class="game-link" href="https://play.google.com/store/apps" target="_blank" rel="noopener">Google Play <span>→</span></a></article>
+</div></div></section>
+<section><div class="container"><div class="stats"><div class="stat"><strong>7</strong><span>Games released</span></div><div class="stat"><strong>2D</strong><span>Gameplay at our core</span></div><div class="stat"><strong>∞</strong><span>Ideas still to build</span></div></div></div></section>
+<section id="studio"><div class="container about"><div><div class="eyebrow">Behind the games</div><h2>Small studio.<br>Big ideas.</h2><p>Sagittarius is an independent game studio focused on creating original mobile games. We experiment with mechanics, build our own worlds and keep pushing toward games that feel genuinely fun to play.</p></div><div class="about-box"><h3>What we care about</h3><ul><li>Gameplay that feels responsive and rewarding</li><li>Original mechanics and memorable concepts</li><li>Stylized 2D worlds with their own personality</li><li>Continuous improvement through player feedback</li></ul></div></div></section>
+</main>
+<footer id="contact"><div class="container footer-inner"><div>© 2026 Sagittarius Games. All rights reserved.</div><div class="footer-links"><a href="mailto:yahyaboukhal19@gmail.com">Contact</a><a href="#games">Games</a><a href="#">Back to top</a></div></div></footer>
+</body></html>
